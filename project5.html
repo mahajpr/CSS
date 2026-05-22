@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project 5</title>
+</head>
+<style>
+    .grid-box1{
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        background-color: rgb(184, 183, 183);
+        height:400px;
+        width:700px;
+        margin:100px;
+        border:3px solid black;
+        gap:10px 50px;
+        justify-content:center;
+        align-content:center;
+
+    }
+    .grid-box1 div img{
+        background-color: white;
+        width:100px;
+        height:100px;
+        padding:10px;
+    }
+    #grid-box2{
+        display:grid;
+        grid-template-columns:100px 100px 100px;
+        background-color:rgb(184, 183, 183); 
+        padding:5px;
+        border:2px solid black;
+        gap:5px;
+        justify-content: space-evenly;
+        align-content:space-evenly;
+    }
+    #grid-box2 div img{
+        background-color:white;
+        width:100px;
+        height:100px;
+        padding:10px;
+    }
+    #grid-item{
+        display: grid;
+        grid-template-columns:100px 100px 100px;
+        background-color:rgb(184, 183, 183);
+        padding:5px;
+        border:2px solid black;
+        gap:5px;
+        justify-content: center;
+        align-content: center;
+        margin-top:50px;
+    
+    }
+    #grid-item div img{
+        background-color: white;
+        width: 100px;
+        height:100px;
+        padding:10px;
+    }
+    .item-1{
+        grid-column:1 / span 2;
+        grid-row:1 / span 2;
+    }
+</style>
+<body>
+    <h1>Grid Project</h1>
+    <div class="grid-box1">
+        <div>
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="paris img">
+
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1610621062045-ef5f7201bb3f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="bare tree img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1666976768089-e8a3b92303d1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="flower img">
+
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1429292394373-ddbcc6bb7468?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="street img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1667339610013-020844b87990?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="beachwave img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1664300362291-16264cacd847?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D" arc="elephant img">
+
+        </div>
+    </div>
+    <div id="grid-box2">
+        <div>
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="paris img">
+
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1610621062045-ef5f7201bb3f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="bare tree img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1666976768089-e8a3b92303d1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="flower img">
+
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1429292394373-ddbcc6bb7468?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="street img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1667339610013-020844b87990?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="beachwave img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1664300362291-16264cacd847?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D" arc="elephant img">
+
+        </div>
+    </div>
+    <div id="grid-item">
+        <div class="item-1">
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="paris img">
+
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1610621062045-ef5f7201bb3f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="bare tree img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1666976768089-e8a3b92303d1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="flower img">
+
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1429292394373-ddbcc6bb7468?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="street img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1667339610013-020844b87990?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" arc="beachwave img">
+
+        </div>
+        <div>
+            <img src="https://plus.unsplash.com/premium_photo-1664300362291-16264cacd847?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D" arc="elephant img">
+
+        </div>
+    </div>
+</body>
+</html>
