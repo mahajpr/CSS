@@ -5,7 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Project 6</title>
 </head>
+<style>
+    .sticky{
+        position:sticky;
+        top:0px;
+    }
+    .sticky img{
+        
+        width:100px;
+        height:100px;
+    }
+    .position{
+        position:static;
+        border:2px solid red;
+    }
+    .position img{
+        width:500px;
+        height:500px;
+    }
+    .relative{
+        position:relative;
+        right:30x;
+        border:2px solid red;
+        margin-top:30px;
+    }
+    .relative img {
+        width:500px;
+        height:500px;
+    }
+    .fixed{
+        position:fixed;
+        bottom:0;
+        right:0;
+        /* width:100px;
+        height:100px; */
+        border:3px solid red;
+        margin-top:30px;
+    }
+    .fixed img{
+        width:500px;
+        height:500px;
+    }
+    .absolute{
+        position:relative;
+        width:300px;
+        height:300px;
+        border:3px solid red;
+    }
+    .absolute img{
+        position:absolute;
+        top:50px;
+        right:20px;
+        width:100px;
+        height:100px;
+        border:2px solid red;
+        object-fit: fill;
+    }
+    
+
+</style>
 <body>
     <h1>CSS Position</h1>
+     <div class="sticky">
+        <div>
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" alt="paris img">
+        </div>
+    </div>
+    <div class="position">
+        <div>
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" alt="paris img">
+        </div>
+    </div>
+    <div class="relative">
+        <div>
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" alt="paris img">
+        </div>
+    </div>
+    <div class="fixed">
+        <div>
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" alt="paris img">
+        </div>
+    </div>
+    <div class="absolute">
+        <div>
+            <img src="https://images.unsplash.com/photo-1564566800380-aa5a49acb065?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww" alt="paris img">
+        </div>
+    </div>
+   
 </body>
 </html>
