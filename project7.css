@@ -1,0 +1,46 @@
+.trans{
+    background-color: red;
+    height:150px;
+    width:150px;
+    transition: width 2s , height 3s , background-color 6s , transform 2s;
+    
+}
+#text{
+  text-align: center;
+  color:white;
+
+}
+.trans:hover{
+    background-color:orange;
+    width:400px;
+    height:400px;
+    transform:rotate(180deg);
+    
+}
+
+.delay{ 
+  width: 150px;
+  height: 150px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 2s;
+  transition-timing-function:linear;
+}
+
+.delay:hover {
+  width: 300px;
+}
+
+.transform{
+  width:150px;
+  height:150px;
+  background-color:red;
+  transition :width 2s,height 3s,background-color 5s ,transform 3s;
+
+}
+.transform:hover{
+  width:300px;
+  height:300px;
+  background-color:black;
+  transform:scale(1.1);
+}
